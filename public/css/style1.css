@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    border-bottom: 1px solid black;
+    padding: 1em;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.31);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.31);
+}
+.nav-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.5em;
+    margin-top: 0;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-link {
+    padding: 5px;
+}
+.nav-link-selected {
+    border-bottom: 1px solid black;
+    font-weight: 600;
+}
