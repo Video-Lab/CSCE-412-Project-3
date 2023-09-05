@@ -164,8 +164,14 @@ a:active {
 
 .project-text {
     grid-area: text;
+    text-align: left;
+    margin-left: 0.25em;
 }
 
+.project-title {
+    color: var(--primary);
+    margin-top: 0;
+}
 .projects-intro {
     text-align: center;
 }
@@ -179,4 +185,6 @@ a:active {
 .img-service {
     width: 50%;
 }
+
+
 
