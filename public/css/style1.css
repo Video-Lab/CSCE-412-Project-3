@@ -87,3 +87,33 @@ a:hover {
 a:active {
     text-decoration: none;
 }
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "image text"
+    "link text"; 
+    height: fit-content;
+    gap: 10px;
+}
+
+.img-project {
+    grid-area: image;
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.btn-external {
+    grid-area: link
+}
+
+.project-text {
+    grid-area: text;
+}
