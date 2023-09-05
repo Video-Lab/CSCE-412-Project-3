@@ -186,5 +186,10 @@ a:active {
     width: 50%;
 }
 
+.section-text-service {
+    text-align: left;
+    margin: 0.25em 1em;
+}
+
 
 
