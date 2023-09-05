@@ -1,6 +1,20 @@
+:root {
+    --text: #030803;
+    --background: #fbfefb;
+    --primary: #276a25;
+    --secondary: #c8ebc6;
+    --accent: #3faa3c;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+}
+
+p, a {
+    color: var(--text);
+    font-size: 1rem;
 }
 
 .nav {
@@ -14,11 +28,15 @@ body {
 .section {
     text-align: center;
 }
+
 .nav-title {
     text-transform: uppercase;
     text-align: center;
     margin: 0.5em;
     margin-top: 0;
+    color: var(--primary);
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
 }
 
 .nav-links {
@@ -29,10 +47,18 @@ body {
 
 .nav-link {
     padding: 5px;
+    transition: all 0.3s;
 }
+
 .nav-link-selected {
     border-bottom: 1px solid black;
     font-weight: 600;
+    color: var(--primary)
+    
+}
+
+.nav-link:hover {
+    color: var(--secondary);
 }
 
 .content {
@@ -52,6 +78,8 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--primary);
 }
 
 .section-text {
@@ -86,7 +114,6 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: inherit;
 }
 
 a:hover {
