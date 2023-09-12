@@ -1,0 +1,112 @@
+/* Define Texas A&M University colors */
+:root {
+    --aggie-maroon: #500000;
+    --aggie-white: #FFFFFF;
+}
+
+/* Body and Page-Wide Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--aggie-white);
+    color: var(--aggie-maroon);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--aggie-maroon);
+    color: var(--aggie-white);
+    text-align: center;
+    padding: 20px;
+}
+
+.header-title {
+    font-size: 2em;
+}
+
+/* Navigation Styles */
+.nav {
+    background-color: var(--aggie-maroon);
+    color: var(--aggie-white);
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--aggie-white);
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+.main {
+    padding: 20px;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 1.5em;
+}
+
+.section-text {
+    margin: 10px 0;
+}
+
+/* Major Areas of Study Grid Styles */
+.major-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.major-box {
+    background-color: var(--aggie-maroon);
+    color: var(--aggie-white);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.major-title {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.major-description {
+    margin: 10px 0;
+}
+
+/* List Styles */
+.section-list {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.section-item {
+    margin: 5px 0;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--aggie-maroon);
+    color: var(--aggie-white);
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-text {
+    font-size: 0.8em;
+}
