@@ -218,12 +218,13 @@ a:active {
 
 .section-service {
     display: flex; 
-    flex-direction: row;
+    flex-direction: column;
     margin: 0.5em;
 }
 
 .img-service {
     width: 50%;
+    margin: auto;
 }
 
 .section-text-service {
