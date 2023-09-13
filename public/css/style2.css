@@ -182,6 +182,42 @@ a:active {
     text-align: center;
 }
 
+.section-qualifications {
+    display: grid;
+    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "resume title-skills"
+    "resume text-skills"
+    "resume title-interests"
+    "resume text-interests";
+    gap: 20px;
+}
+
+.content-qualifications {
+    max-width: 1000px;
+}
+
+.resume {
+    grid-area: resume;
+}
+
+.section-title-skills {
+    grid-area: title-skills;
+}
+
+.section-text-skills {
+    grid-area: text-skills;
+}
+
+.section-title-interests {
+    grid-area: title-interests;
+}
+
+.section-text-interests {
+    grid-area: text-interests;
+}
+
 .section-service {
     display: flex; 
     flex-direction: row;
