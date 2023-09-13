@@ -184,13 +184,11 @@ a:active {
 
 .section-qualifications {
     display: grid;
-    grid-template-rows: min-content min-content min-content min-content;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas:
-    "resume title-skills"
-    "resume text-skills"
-    "resume title-interests"
-    "resume text-interests";
+    "title-skills resume title-interests"
+    "text-skills resume text-interests";
     gap: 20px;
 }
 
