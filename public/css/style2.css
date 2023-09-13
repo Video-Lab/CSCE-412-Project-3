@@ -128,44 +128,55 @@ a:active {
     text-decoration: none;
 }
 
+.content-projects {
+    max-width: 100%;
+}
+
 .section-projects {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project {
     display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-template-rows: 1fr min-content;
+    grid-template-rows: 1fr min-content min-content;
     grid-template-areas:
-    "image text"
-    "link text"; 
-    height: fit-content;
+    "text"
+    "image"
+    "link";
     gap: 5px;
     margin: 1em;
     border: 1px solid black;
     padding: 5px;
+    max-width: 300px;
+    text-align: center;
 }
 
 .img-project {
     grid-area: image;
-    max-height: 150px;
-    max-width: 150px;
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .btn-project {
     grid-area: link;
+    width: fit-content;
+    margin: auto;
 }
 
 .project-text {
     grid-area: text;
-    text-align: left;
     margin-left: 0.25em;
 }
 
 .project-title {
     color: var(--primary);
     margin-top: 0;
+    font-weight: 300;
+    text-transform: lowercase;
 }
 .projects-intro {
     text-align: center;
